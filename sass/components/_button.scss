@@ -1,0 +1,31 @@
+/* Primary Button */
+
+.btn {
+  &--white {
+    background-color: $color-white;
+    color: $color-grey-dark;
+  }
+  &:link,
+  &:visited {
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 4rem;
+
+    /* Button Animations */
+    transition: all 0.2s;
+    animation: moveInUp 0.8s 0.1s;
+  }
+
+  /* When hovering the button */
+  &:hover {
+    transform: translateY(-0.3ren);
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+  }
+
+  /* When clicking the button */
+  &:active {
+    transform: translateY(-0.1rem);
+    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
+  }
+}

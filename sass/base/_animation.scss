@@ -1,0 +1,45 @@
+/* Keyframes Animations */
+@keyframes moveInLeft {
+  /* Start moving from left with 0 opacity */
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  /* at 80% completion move slightly righ 20px */
+  80% {
+    transform: translateX(1rem);
+  }
+  /* Move back at original state at 100% */
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes moveInRight {
+  /* Start moving from right with 0 opacity */
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+  /* at 80% completion move slightly left 10px */
+  80% {
+    transform: translateX(-1rem);
+  }
+  /* Move back at original state at 100% */
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes moveInUp {
+  /* Start moving from right with 0 opacity */
+  0% {
+    opacity: 0.5;
+    transform: translateY(10rem);
+  }
+  /* Move back at original state at 100% */
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
