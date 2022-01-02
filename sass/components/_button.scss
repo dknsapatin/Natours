@@ -17,14 +17,14 @@
     animation: moveInUp 0.8s 0.1s;
   }
 
-  /* When hovering the button */
   &:hover {
+    /* When hovering the button */
     transform: translateY(-0.3ren);
     box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
   }
 
-  /* When clicking the button */
   &:active {
+    /* When clicking the button */
     transform: translateY(-0.1rem);
     box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
   }

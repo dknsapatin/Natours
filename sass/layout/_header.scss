@@ -8,32 +8,25 @@
     url(../img/hero.jpg);
   background-size: cover;
   background-position: top;
-
-  /* New CSS Technique */
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   position: relative;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 
-  /* Top-left Logo */
   &__logo-box {
     position: absolute;
-    top: 3rem;
-    left: 3rem;
+    top: 4rem;
+    left: 4rem;
   }
 
   &__logo {
-    height: 2rem;
-    width: auto;
+    height: 3.5rem;
   }
 
-  /* Text Box */
   &__text-box {
-    /* This position is absolute towards the header */
     position: absolute;
-    text-align: center;
-
-    /* This keeps the text box in the center at all times. IMPORTANT */
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
   }
 }

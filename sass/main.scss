@@ -1,11 +1,12 @@
-/* Imports */
+/* Imports of all .scss files */
+
 @import "abstracts/functions";
 @import "abstracts/mixins";
 @import "abstracts/variables";
 
 @import "base/base";
-@import "base/animations";
-@import "base/topography";
+@import "base/animation";
+@import "base/typography";
 @import "base/utilities";
 
 @import "layout/header";
