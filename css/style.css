@@ -274,3 +274,30 @@ body {
     background-image: linear-gradient(to right, #7ed56f, #28b485); }
   .feature-box:hover {
     transform: translateY(-1.5rem) scale(1.03); }
+
+.card {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 52rem;
+  width: 70%; }
+  .card__side {
+    background-color: cadetblue;
+    color: #fff;
+    font-size: 2rem;
+    height: 50rem;
+    width: 100%;
+    transition: all 0.8s;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    position: absolute; }
+    .card__side--front {
+      background-color: chartreuse; }
+    .card__side--back {
+      background-color: coral;
+      transform: rotateY(180deg); }
+  .card:hover .card__side--front {
+    transform: rotateY(180deg); }
+  .card:hover .card__side--back {
+    transform: rotateY(0); }

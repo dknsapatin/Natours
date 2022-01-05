@@ -1,0 +1,38 @@
+.card {
+  perspective: 150rem;
+  // For Mozilla Firefox
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 52rem;
+  width: 70%;
+
+  &__side {
+    background-color: cadetblue;
+    color: $color-white;
+    font-size: 2rem;
+    height: 50rem;
+    width: 100%;
+    // width: 100%;
+    transition: all 0.8s;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+
+    position: absolute;
+
+    &--front {
+      background-color: chartreuse;
+    }
+    &--back {
+      background-color: coral;
+      transform: rotateY(180deg);
+    }
+  }
+
+  &:hover &__side--front {
+    transform: rotateY(180deg);
+  }
+  &:hover &__side--back {
+    transform: rotateY(0);
+  }
+}
