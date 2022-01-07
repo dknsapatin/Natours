@@ -1,6 +1,9 @@
 /* Primary Button */
 
 .btn {
+  &--round {
+    border-radius: 100px;
+  }
   &--white {
     background-color: $color-white;
     color: $color-grey-dark;
