@@ -61,4 +61,7 @@
     transform: translateY(-0.1rem);
     box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
   }
+  &__size {
+    font-size: 2rem;
+  }
 }
