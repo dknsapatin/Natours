@@ -1,7 +1,8 @@
 .section-about {
   background-color: $color-grey-light-1;
-  padding: 25rem 0 30rem 0;
+  padding: 25rem 0 40rem 0;
   margin-top: -20vh;
+  margin-bottom: -20rem;
 }
 
 .section-features {
@@ -32,6 +33,20 @@
 }
 
 .section-stories {
-  padding: 25rem 0;
+  padding: 25rem 0 10rem 0;
   position: relative;
+}
+
+.section-book {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 25rem 0;
+  background-image: linear-gradient(
+    to bottom right,
+    $color-primary-light,
+    $color-primary-dark
+  );
+  z-index: -1;
 }
