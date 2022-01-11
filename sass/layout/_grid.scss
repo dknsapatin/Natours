@@ -27,3 +27,12 @@
 
   gap: $gutter-horizontal;
 }
+.container-book {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10rem 0;
+
+  gap: $gutter-horizontal;
+}

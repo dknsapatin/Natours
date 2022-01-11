@@ -133,6 +133,9 @@ body {
 .u-margin-bottom-small {
   margin-bottom: 1rem; }
 
+.u-card-size {
+  padding: 10rem 5rem; }
+
 .header {
   height: 95vh;
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero.jpg);
@@ -177,6 +180,14 @@ body {
   align-items: center;
   gap: 6rem; }
 
+.container-book {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10rem 0;
+  gap: 6rem; }
+
 .section-about {
   background-color: #f7f7f7;
   padding: 25rem 0 40rem 0;
@@ -204,13 +215,8 @@ body {
   position: relative; }
 
 .section-book {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  padding: 25rem 0;
-  background-image: linear-gradient(to bottom right, #7ed56f, #28b485);
-  z-index: -1; }
+  padding: 25rem 0 15rem 0;
+  background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
 
 /* Primary Button */
 .btn--round {
@@ -471,9 +477,10 @@ body {
     object-fit: cover; }
 
 .book {
-  padding: 25rem 0;
-  position: relative; }
-  .book__picture {
-    background-size: 100%;
-    background-image: url(/img/nat-10.jpg);
-    padding: 23rem 50rem; }
+  background-image: url(../img/nat-10.jpg);
+  background-size: 100%;
+  text-align: center;
+  border-radius: 6px;
+  box-shadow: 0 3rem 4rem rgba(0, 0, 0, 0.2);
+  width: 65%;
+  height: 100%; }
