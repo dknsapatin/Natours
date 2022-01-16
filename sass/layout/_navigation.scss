@@ -11,6 +11,7 @@
     right: 6rem;
     border-radius: 50%;
     z-index: 2000;
+    box-shadow: 0 1rem 3rem rgba($color-black, 0.1);
   }
   &__background {
     height: 6rem;
@@ -25,7 +26,9 @@
     );
     z-index: 1000;
 
-    transform: scale(80);
+    transition: transform 0.6s cubic-bezier(0.83, 0, 0.17, 1);
+
+    // transform: scale(80);
   }
   &__nav {
     height: 100vh;
@@ -34,6 +37,12 @@
     top: 0;
     right: 0;
     z-index: 1500;
+
+    // Closing navigation
+    opacity: 0;
+    width: 0;
+
+    transition: all 0.6s cubic-bezier(0.68, -0.6, 0.32, 1.6);
   }
   &__list {
     position: absolute;
@@ -42,6 +51,7 @@
     transform: translate(-50%, -50%);
     list-style: none;
     text-align: center;
+    width: 100%;
   }
   &__item {
     margin: 2rem;
@@ -71,5 +81,13 @@
       color: $color-primary;
       transform: translateX(1rem);
     }
+  }
+
+  &__checkbox:checked ~ &__background {
+    transform: scale(80);
+  }
+  &__checkbox:checked ~ &__nav {
+    opacity: 1;
+    width: 100%;
   }
 }
