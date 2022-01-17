@@ -4,7 +4,6 @@ body {
   font-size: 1.6rem;
   line-height: 1.7;
   color: $color-grey-dark;
-  padding: 3rem;
 }
 
 /* Primary Heading div box*/
@@ -28,7 +27,13 @@ body {
     animation-name: moveInLeft;
     animation-duration: 2s;
     animation-delay: 0.1s;
+
+    // --------------Responsive--------------------------
+    @include respond(phone) {
+      letter-spacing: 0.5rem;
+    }
   }
+
   /* "is where life happens" */
   &--sub {
     display: block;
@@ -41,6 +46,12 @@ body {
     /* animation-name: moveInRight;
       animation-duration: 2s;
       animation-delay: 0.1s; */
+
+    // --------------Responsive--------------------------
+    @include respond(phone) {
+      letter-spacing: 1rem;
+      font-family: 5rem;
+    }
   }
 }
 
@@ -61,6 +72,14 @@ body {
     $color-primary-light,
     $color-primary-dark
   );
+
+  // --------------Responsive--------------------------
+  @include respond(tab-port) {
+    font-size: 3rem;
+  }
+  @include respond(phone) {
+    font-size: 2.5rem;
+  }
 
   &:hover {
     transform: skewY(1deg) skewX(15deg) scale(1);

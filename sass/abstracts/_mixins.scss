@@ -33,6 +33,8 @@ $breakpoint:
 1em = 16px
 */
 
+// ORDER: Base + Typography --> layout --> grid --> page --> components
+
 @mixin respond($breakpoint) {
   @if $breakpoint == phone {
     @media (max-width: 37.5em) {
